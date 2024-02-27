@@ -21,7 +21,7 @@ struct AddExpenseSheet: View {
             Form {
                 TextField("Expense Name", text: $name)
                 DatePicker("Date", selection: $date, displayedComponents: .date)
-                TextField("Value", value: $value, format: .currency(code: "GBP"))
+                TextField("Value", value: $value, format: .currency(code: "USD"))
                     .keyboardType(.decimalPad)
                 
             }
